@@ -8,10 +8,10 @@ ssh_user       = "user@domain.com"
 ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
-deploy_default = "rsync"
+deploy_default = "push"
 
 # This will be configured for you when you run config_deploy
-deploy_branch  = "gh-pages"
+deploy_branch  = "master"
 
 ## -- Misc Configs -- ##
 
@@ -25,7 +25,7 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
-
+editor          ="open"       # open ,使用系统默认编辑器  
 
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
 task :install, :theme do |t, args|
@@ -109,6 +109,9 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
   end
+  if #{editor}
+      system "#{editor} #{filename}"
+  end
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -144,6 +147,9 @@ task :new_page, :filename do |t, args|
       page.puts "sharing: true"
       page.puts "footer: true"
       page.puts "---"
+    end
+    if #{editor}
+      system "#{editor} #{filename}"
     end
   else
     puts "Syntax error: #{args.filename} contains unsupported characters"
