@@ -1,0 +1,15 @@
+{% if site.Sina_Weibo_source and site.Sina_Weibo_uid > 0 %}
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/{{ site.Sina_Weibo_user }}">{{ site.Sina_Weibo_user }}</a> @ <a href="http://weibo.com">新浪微博</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="{{ root_url }}/javascripts/weibo.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getWeiboTimeline({{ site.Sina_Weibo_uid }}, {{ site.Sina_Weibo_source }});
+	})(jQuery);
+</script>
+{% endif %}
