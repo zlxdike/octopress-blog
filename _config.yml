@@ -49,8 +49,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-# blog_index_asides:
-# post_asides:
+#blog_index_asides: [custom/asides/about.html]
+#post_asides: [custom/asides/about.html]
 # page_asides:
 
 # ----------------------- #
@@ -59,6 +59,11 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 
 #Sina Weibo
 Sina_Weibo_user: zlxdike
+Sina_Weibo_uid: 1765106605
+Sina_Weibo_source: 5786724301
+
+#twitter
+twitter_user: zlxdike
 
 # Github repositories
 github_user:
@@ -66,13 +71,6 @@ github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
-# Twitter
-twitter_user: zlxdike
-twitter_tweet_count: 4
-twitter_show_replies: false
-twitter_follow_button: true
-twitter_show_follower_count: false
-twitter_tweet_button: true
 
 # Google +1
 google_plus_one: false
@@ -99,5 +97,5 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_user: zlxdike
+facebook_user: 
 facebook_like: false

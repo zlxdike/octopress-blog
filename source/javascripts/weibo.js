@@ -1,5 +1,5 @@
 (function($){
-	$.fn.getTwitterFeed = function(uid, verifier){
+	$.fn.getWeiboTimeline = function(uid,source){
 		var banner = $(this),
 			feed = banner.find('.feed'),
 			interval = 10000,
@@ -48,7 +48,7 @@
 
 		if ($(window).width() > 600){
 
-			var url = 'http://api.weibo.com/2/statuses/user_timeline.json?source=5786724301&uid=2144329284&feature=1&trim_user=1&callback=?';
+			var url = 'http://api.weibo.com/2/statuses/user_timeline.json?source='+source+'&uid='+uid+'&feature=1&trim_user=1&callback=?';
 			banner.show();
 			$.getJSON(url,function(json){
 				//console.log(json.data.statuses[0].text);
@@ -57,9 +57,6 @@
 					counts = 0,
 					timeout;
 					
-			
-				
-
 				for (var i=0; i<length; i++){
 					var item = document.createElement('li'),
 						text = json.data.statuses[i].text;						
