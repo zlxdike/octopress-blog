@@ -4,10 +4,10 @@
 
 url: http://zlxdike.github.com
 title: 2良心's Blog
-subtitle: abc
+subtitle: Because of you,so it's write for you.
 author: zlxdike
 simple_search: http://google.com/search
-description:
+description: Because of you,so it's write for you.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -90,8 +90,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: zlxdike
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
