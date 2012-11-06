@@ -79,7 +79,7 @@
 
 				var play = function(){
 					timeout = setTimeout(function(){
-						feed.animate({top: '-='+30}, speed, function(){
+						feed.animate({top: '-='+33}, speed, function(){
 							$(this).append($(this).children().eq(counts).clone());
 							counts++;
 							play();
