@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://zlxdike.github.com
-title: 2良心's Blog
-subtitle: Because of you,so it's write for you.
+title: 大叔，你怎么看
+subtitle: 
 author: zlxdike
 simple_search: http://google.com/search
-description: Because of you,so it's write for you.
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -39,7 +39,7 @@ pygments: false # default python pygments have been replaced by pygments.rb
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "Continue to read"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -58,15 +58,18 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 
 #Sina Weibo
-Sina_Weibo_user: zlxdike
+Sina_Weibo_user: 2良心
+Sina_Weibo_url: zlxdike
 Sina_Weibo_uid: 1765106605
 Sina_Weibo_source: 5786724301
+Sina_Weibo_share: true   # Whether show the sharing button
+
 
 #twitter
 twitter_user: zlxdike
 
 # Github repositories
-github_user:
+github_user: zlxdike
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
@@ -94,7 +97,7 @@ disqus_short_name: zlxdike
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-36125931-1
 
 # Facebook Like
 facebook_user: 

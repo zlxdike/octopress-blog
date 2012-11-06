@@ -1,5 +1,12 @@
 <div class="share">
 	<div class="addthis_toolbox addthis_default_style ">
+	{% if site.Sina_Weibo_share %}
+  	<span>
+  	<iframe 
+    width="86" scrolling="no" height="16" frameborder="0" src="http://hits.sinajs.cn/A1/weiboshare.html?url={{ site.url }}{{ page.url }}&amp;type=6&amp;{% if site.Sina_Weibo_uid %}ralateUid={{ site.Sina_Weibo_uid }}&amp;{% endif %}language=zh_cn" allowtransparency="true">
+  	</iframe>
+  	</span>
+  	{% endif %}
 	{% if site.facebook_like %}
 	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 	{% endif %}

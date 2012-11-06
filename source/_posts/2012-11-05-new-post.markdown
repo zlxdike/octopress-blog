@@ -6,6 +6,8 @@ comments: true
 categories: 
 
 ---
+
+
 ``` js Javascript Hello World 
 alert('hello world');
 dafd;
@@ -14,6 +16,13 @@ wode;
 void main (){
  pritf}
 ```
+
+```js
+adf
+fads
+```
+
+
 >woshi
 sdd
 
